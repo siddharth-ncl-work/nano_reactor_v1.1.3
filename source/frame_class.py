@@ -90,7 +90,7 @@ class frame_class:
     _atoms=self.atoms=int(file.readline())
     while _atoms!='':
       self.atoms=int(_atoms)
-      f=int(file.readline().split()[1])
+      f=int(file.readline().split()[2])
       if f==frame_no:
         self.cords=[file.readline().split() for i in range(self.atoms)]
         for i in range(self.atoms):
