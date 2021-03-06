@@ -56,7 +56,7 @@ class frame_class:
       f=int(f.split()[2])
       file.readline()
       file.readline()
-      self.atoms=int(file.readline().split()[0].strip()[:3])
+      self.atoms=int(file.readline().split()[0][:3])
       if f==frame_no:
         self.frame_adj_mat=np.zeros((self.atoms,self.atoms))
         self.cords=[file.readline().split()[:4] for i in range(self.atoms)]
