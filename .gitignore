@@ -8,6 +8,7 @@ __pycache__/
 *.chk
 *.xyz
 !input/molecules/*.xyz
+!input/molecules/*.mol
 pbsnodes
 *.o*
 test.py

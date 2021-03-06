@@ -53,10 +53,10 @@ class frame_class:
     is_found=-1
     f=file.readline()
     while f!='':
-      f=int(f.split()[1])
+      f=int(f.split()[2])
       file.readline()
       file.readline()
-      self.atoms=int(file.readline().split()[0])
+      self.atoms=int(file.readline().split()[0].strip()[:3])
       if f==frame_no:
         self.frame_adj_mat=np.zeros((self.atoms,self.atoms))
         self.cords=[file.readline().split()[:4] for i in range(self.atoms)]
