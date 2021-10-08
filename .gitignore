@@ -1,0 +1,14 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.mol
+*.mol2
+*.com
+*.log
+*.chk
+*.xyz
+pbsnodes
+*.o*
+test.py
+output/
+test/
